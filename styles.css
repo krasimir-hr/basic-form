@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #12372A;
+    color: #FBFADA;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+div {
+    background-color: #436850;
+    width: 60%;
+    max-width: 700px;
+    min-width: 700px;
+    margin: 0 auto;
+    padding: 1em 0 1em 0;
+}
+
+h1, p{
+    margin: auto;
+    text-align: center;
+}
+
+
+form {
+    width: 60vw;
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    padding-bottom: 2em;
+}
+
+label, legend{
+    display: block;
+    margin: 0.5rem;
+}
+
+
+
+input, textarea, select{
+    display: block;
+    width: 100%;
+    margin: 10px 0 0 0;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+hr {
+    margin: 20px 0 20px 0;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: 2em;
+    font-size: 1em;
+    background-color: #ADBC9F;
+    border: #FBFADA;
+    cursor: pointer;
+    transition: all 0.5;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.radio-label :last-of-type{
+    margin-bottom: 10px
+}
+
+input[type=radio] {
+    display: inline-block;
+    width: 5%;
+    margin: 10px 0 0 0;
+    max-width: 500px;
+    min-width: 0;
+}
+
+input[type=checkbox] {
+    display: inline-block;
+    width: 5%;
+    margin: 10px 0 0 0;
+    max-width: 500px;
+    min-width: 0;
+}

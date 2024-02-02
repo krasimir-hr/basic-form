@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Game Review Form</title>
+</head>
+<body>
+    <div>
+    <h1 id="title">Game Review Form</h1>
+    <p id="description">Rate the latest game you have played</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name: <input class="form-control" id="name" type="text" placeholder="Enter your name" required/></label>
+        <label id="email-label" for="email">Email: <input class="form-control" id="email" type="email" placeholder="Enter your email" required/></label>
+        <label id="number-label" for="number">Age: <input class="form-control" id="number" type="number" placeholder="Enter your age" min="0" max="120" required/></label>
+        <hr/>
+        <label for="game-name-label">Game: <input class="form-control" id="game-name" type="text" placeholder="Enter the name of the game you are rating" /></label>
+        <label for="dropdown">Platform: 
+            <select id="dropdown">
+                <option disabled>(choose one)</option>
+                <option value="1">PC</option>
+                <option value="2">PlayStation 5</option>
+                <option value="3">Xbox Series X/S</option>
+                <option value="4">Nintendo Switch</option>
+            </select>
+        </label>
+        <legend>First time playing? (required)</legend>
+        <label class="radio-label" for="radio-yes"><input class="inline" id="radio-yes" type="radio" value="1" name="first-time-question" checked/>Yes</label>
+        <label class="radio-label" for="radio-no"><input class="inline" id="radio-no" type="radio" value="2" name="first-time-question"/>No</label>
+        <legend>Mark any of the following:</legend>
+        <label for="checkbox-label-1">
+            <input class="inline" id="checkbox-label-1" type="checkbox" value="1"/>I have liked the game!
+        </label>
+        <label for="checkbox-label-2">
+            <input class="inline" id="checkbox-label-2" type="checkbox" value="2"/>It was too long.
+        </label>
+        <label for="checkbox-label-3">
+            <input class="inline" id="checkbox-label-3" type="checkbox" value="3"/>It was too short.
+        </label>
+        <label for="textbox">
+            <textarea id="textbox" placeholder="Write a few words about your experience"></textarea>
+        </label>
+        <button id="submit" style="vertical-align:middle"><span>Submit!</span></button>
+    </form>
+    </div>
+    
+</body>
+</html>
